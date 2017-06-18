@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>晓</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		body{background-color: rgb(56,53,60);}
+		.wrap{width: 1240px;margin:0 auto;padding: 45px}
+		.pic li img{width:1240px;height: 780px}
+	</style>
+	<script type="text/javascript" src="js/libs/myfocus-2.0.1.min.js"></script>
+	<script>
+		myFocus.set({
+		    id:'ad_pic',//焦点图盒子ID
+		    time:2.5,
+		    pattern:'mF_fancy',
+		    time:3,//切换时间间隔(秒)
+		    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		    width:1240,//设置图片区域宽度(像素)
+		    height:780,//设置图片区域高度(像素)
+		    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="ad" id="ad_pic">
+			<div class="loading"><img src="imgs/mingren/loading.gif" alt="请稍候..." /></div>
+			<div class="pic">
+				<ul>
+					<li><img src="imgs/xiao/1.jpg" alt=""></li>
+					<li><img src="imgs/xiao/2.jpg" alt=""></li>
+					<li><img src="imgs/xiao/3.jpg" alt=""></li>
+					<li><img src="imgs/xiao/4.jpg" alt=""></li>
+					<li><img src="imgs/xiao/5.jpg" alt=""></li>
+					<li><img src="imgs/xiao/6.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

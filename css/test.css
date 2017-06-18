@@ -1,0 +1,34 @@
+*{margin: 0;padding: 0;}
+input{border: none;text-indent: 12px;outline: none;}
+.wrap {/*width: 1920px;height: 870px;*/position: relative;overflow: hidden;} /*当前页面显示一张的*/
+.div-img {/*width: 9600px;height: 870px;*/position: absolute;}/*图片集合装5张的*/
+.div-img img{float: left;opacity: 0.9}
+
+#dian{position: absolute;bottom: 20px;text-align: center;width: 100%}
+#dian li {width:15px;height:15px;background:#484848;border-radius:50%;display:inline-block;cursor: pointer;}
+#dian li.active{background-color: #d0d0d0;}
+
+.btn{height:70px;width:70px;position:absolute;top:50%;margin-top:-36px;cursor:pointer;display: none;}
+.wrap:hover .btn{display: block;}
+.btn:hover{opacity: 0.3;}
+.left{left:10px;background:url('../imgs/arrow.png');opacity: 0.7}
+.right{right:10px;background:url('../imgs/arrow.png') left bottom;opacity: 0.7}
+
+#head{position:absolute;text-align: center;z-index: 10;top: 40px;width: 100%;}
+.head_wrap{width: 1170px;margin: 0 auto;}
+.nevigator{position: relative;float: right;}
+.nevigator li{list-style: none;float: left;padding:10px;vertical-align: center;line-height: 35px}
+.nevigator li a{color: white;font-weight: bold;text-decoration: none;font-size: 20px;transition: color 1s;padding-bottom:15px}
+.nevigator li a:hover{border-bottom: 2px solid #fff;color: #000}
+.head_wrap hr{width: 1170px;position: absolute;top:125px;}
+.head_wrap p{position: absolute;top: 85px;left: 500px;color: #ccc}
+.nevigator .search input{width: 35px;height: 35px;border-radius: 25px;transition: width 1s;position: relative;
+	background:white url(../imgs/search_icon.png) no-repeat 90% 6px;background-size: 22px 22px;}
+.nevigator .search input:hover{width: 120px;background-color: #ccc;opacity: 0.6}
+
+.nevigator .two .twoclass{display: none;}
+.nevigator .twoclass li{float: left;line-height: 20px;color: #fff;text-align: center;width: 42px;text-indent: -15px;}
+.nevigator .twoclass li a{font-weight: normal;font-size: 15px;}
+.nevigator li:hover .twoclass{display: block;width:42px;margin:0 auto;}
+
+iframe{position: absolute;}
